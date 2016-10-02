@@ -10,6 +10,63 @@
   justify-content: space-between;
 }
 
+.user-dropdown {
+  transition: all 200ms ease;
+  ul {
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+    margin: 10px 20px 5px 5px;
+    height: 100px;
+  }
+  li {
+    height: 30px;
+    color: #333333;
+    text-align: center;
+    &:hover {
+      font-size: 20px;
+      text-decoration: underline;
+    }
+  }
+}
+.hidden-dropdown {
+  display: none;
+}
+
+.user-tools {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 200ms ease;
+  border-left: 8px solid #333333;
+  background: white;
+}
+.hidden-tools {
+  right: -50px;
+}
+
+.show-tools {
+  position: absolute;
+  top: 0;
+  right:0;
+  width: 131px;
+  min-height: 50px;
+}
+
+.show-tools:hover .hidden-tools {
+  right: -25px;
+  height: 100%;
+}
+
+.user-login {
+  text-align: right;
+  padding: 20px;
+  a {
+    color: #333333;
+  }
+}
+
 /* Optional class to fix the navbar on top */
 .navbar-wagon-fixed {
   position: fixed;

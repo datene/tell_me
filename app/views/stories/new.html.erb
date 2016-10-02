@@ -1,0 +1,10 @@
+<% @tropes.each do |trope| %>
+<%= link_to trope.trope_url do %>
+<h4>
+  <%= trope.title %>
+</h4>
+<% end %>
+<p>
+  <%= trope.description %>
+</p>
+<% end %>
